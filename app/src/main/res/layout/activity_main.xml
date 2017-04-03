@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   android:orientation="vertical"
+    tools:context="nineinfosys.resistorcalculator.MainActivity">
+
+
+    <LinearLayout
+        android:layout_marginLeft="20dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:weightSum="1">
+
+
+        <TextView
+            android:text="Length:"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewLength"
+            android:textSize="20dp" />
+
+        <EditText
+            android:layout_width="118dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/editTextLength" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:id="@+id/spinnerLength" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginLeft="20dp"
+
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:weightSum="1">
+
+
+        <TextView
+            android:text="Diameter:"
+            android:layout_width="113dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewDiameter"
+            android:textSize="20dp" />
+
+        <EditText
+            android:layout_width="118dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/editTextDiameter" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:id="@+id/spinnerDiameter" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginLeft="20dp"
+
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:weightSum="1">
+
+
+        <TextView
+            android:text="Conductivity(S/m):"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewConductivity"
+            android:textSize="20dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/editTextConductivity" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_marginTop="30dp"
+        android:weightSum="1">
+
+        <Button
+            android:text="Calculate"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonCalculate"
+            android:textSize="20dp"
+            android:layout_weight="0.15" />
+
+        <Button
+            android:layout_marginLeft="50dp"
+            android:text="Clear"
+            android:textSize="20dp"
+            android:layout_width="103dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonClear" />
+
+    </LinearLayout>
+
+    <TextView
+        android:text=""
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewResult" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewResult1" />
+
+</LinearLayout>
